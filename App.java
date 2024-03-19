@@ -13,7 +13,6 @@ public class App {
 
     public static String toBinar(int n, int b) {
         String binar = "";
-
         for (int i = b - 1; i >= 0; i--) {
             int bit = (n >> i) & 1;
             binar += bit;

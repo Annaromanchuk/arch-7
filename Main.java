@@ -19,7 +19,7 @@ public class Main {
 // щоб відобразилося наступна команда (сортування)
         System.out.println("Відсортований масив:");
         System.out.println(Arrays.toString(b));
-        
+
         int median = Median(b);
         System.out.println("Медіана:");
         System.out.println(median);
@@ -29,5 +29,14 @@ public class Main {
         System.out.println(average);
         scanner.close();
     }
+    public static String toBinar(int n, int b) {
+        String binar = "";
+        for (int i = b - 1; i >= 0; i--) {
+            int bit = (n >> i) & 1;
+            binar += bit;
+        }
+        return binar.toString();
     }
-}
+    
+
+    }
