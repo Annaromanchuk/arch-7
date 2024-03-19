@@ -98,6 +98,20 @@ public class Main {
             k++;
         }
     }
+    public static int Median(int[] arr) {
+        int n = arr.length;
+        if (n % 2 == 0) {
+            return (arr[n / 2] + arr[n / 2 - 1]) / 2;
+        } else {
+            return arr[n / 2];
+        }
+    }
 
-
+    public static int Average(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        return sum / arr.length;
+    }
     }
