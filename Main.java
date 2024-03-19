@@ -19,6 +19,15 @@ public class Main {
 // щоб відобразилося наступна команда (сортування)
         System.out.println("Відсортований масив:");
         System.out.println(Arrays.toString(b));
+        
+        int median = Median(b);
+        System.out.println("Медіана:");
+        System.out.println(median);
 
+        double average = Average(b);
+        System.out.println("Середнє значення:");
+        System.out.println(average);
+        scanner.close();
+    }
     }
 }
