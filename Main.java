@@ -13,6 +13,12 @@ public class Main {
             System.out.println(a);
             System.out.println(binarResult);
         }
+        int[] b = {0, 4, 2, 5, 9};
+        mergeSort(b, 0, b.length - 1);
+//* треба ввести будь-який знак,
+// щоб відобразилося наступна команда (сортування)
+        System.out.println("Відсортований масив:");
+        System.out.println(Arrays.toString(b));
 
     }
 }
